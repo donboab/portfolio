@@ -1,5 +1,6 @@
 :root{
     --pri: #fffffff2;
+    --mobilepri: #ffffff;
     --pshad: #f4f4f6;
     --sec: #fac451;
     --sectran: #fac45120;
@@ -130,7 +131,6 @@
 }
 .site-content{
     flex: 7.4;
-    /* background: var(--sectran); */
     overflow-y: scroll;
     overflow-x: hidden;
     -ms-overflow-style: none;
@@ -947,4 +947,558 @@
 .edu-footer p a:hover{
     color: var(--sec);
 }
-  
+.mobile-bar{
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .hero-img img{
+        width: 332px;
+        height: 332px;
+        object-fit: cover;
+        margin-bottom: -3.5rem;
+        margin-right: -1.0rem;
+    }
+    .hero-text{
+        padding: 2rem;
+        align-items: center;
+        color: var(--pri);
+    }
+    .hero-text p{
+        font-size: 14px;
+    }
+    .hero-text h3{
+        font-family: cursive;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .who-iam{
+        height: 65px;
+        margin-bottom: 1rem;
+    }
+    .who-iam h2{
+        color: var(--sec);
+    }
+    .yesport, .buzdigit, .lamama, .fiverr, .stylenet, .tinyman{
+        width: 320px;
+        height: 340px;
+        background: var(--pri);
+        box-shadow: var(--shad);
+        border: 0.5px solid  var(--sec);
+        border-radius: 5px;
+        padding: 1.3rem;
+        font-size: 14px;
+        margin: 1rem;
+        position: relative;
+    }
+    
+    /* Education */
+    .edu-history{
+        background: var(--pri);
+        padding: 2rem;
+        margin: 0 2rem;
+        position: absolute;
+        z-index: 9999;
+        width: 92.7%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 1.3rem;
+        transition: 1.2s;
+    }
+    .hide-edu{
+        display: none;
+    }
+    .edu-special{
+        height: 220px !important;
+    }
+    .edu{
+        width: 350px;
+        height: 340px;
+        background: var(--pri);
+        box-shadow: var(--shad);
+        border-radius: 5px;
+        padding: 1.3rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+    .edu::before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: var(--pri);
+        transform: rotate(40deg);
+        right: -2%;
+        border-top: 1px dotted var(--bg);
+        border-right: 1px dotted var(--bg);
+    }
+    .edu-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        margin: .7rem 0;
+    }
+    .program{
+        color: var(--blacktxt);
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .edu-head p:not(.program){
+        font-size: 12px;
+        box-shadow: inset var(--shad);
+        border-radius: 15px;
+        padding: .4rem;
+    }
+    .school{
+        font-size: 14px;
+        color: #0d6efd;
+        font-weight: 450;
+    }
+    .edu-cont:not(.edu-cont svg){
+        color: var(--blacktxt);
+        text-align: left;
+        margin-left: -.5rem;
+        font-size: 14px;
+        padding: .5rem;
+    }
+    .edu-cont svg{
+        color: var(--sec);
+        margin-right: .5rem;
+    }
+    .v-line{
+        width: 5px;
+        height: 820px;
+        background: var(--bg);
+        transform: rotate(180deg);
+        position: relative;
+        margin-top: 3.6rem;
+    }
+    .v-line2{
+       display: none;
+    }
+
+    .edu-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        flex-wrap: wrap;
+        margin-left: -5rem;
+        width: 820px;
+        padding-top: 0.65rem;
+    }
+
+}
+@media screen and (max-width: 1100px){
+    .site-container{
+        background: var(--bg);
+        padding: 0;
+        width: 100%;
+        height: 100vh;
+        position: relative;  
+    }
+    .hero-img img{
+        width: 399px;
+        height: 399px;
+        object-fit: cover;
+        margin-bottom: -7.5rem;
+        margin-right: -1.0rem;
+    }
+    .hero-text p{
+    font-size: 18px;
+    }
+    .hero-text h6{
+        font-family: cursive;
+    }
+    .hero-text h3{
+        font-family: cursive;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    .who-iam{
+        height: 30px;
+        margin-bottom: 1rem;
+    }
+    .who-iam h2{
+        color: var(--sec);
+    }
+    .site-wrap{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    .site-nav{
+        display: none;
+    }
+    .media-nav{
+        display: block;
+        flex: .6;
+        background: var(--pri);
+    }
+    .mobile-bar{
+        position: absolute;
+        z-index: 999999;
+        width: 100%;
+        height: 70px;
+        background: var(--mobilepri);
+        display: block;
+        padding: 1rem 1.9rem;
+        box-shadow: var(--shad);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-bar div{
+        width: 30px;
+        height: 4px;
+        background: var(--txt);
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .mb-profile div{
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+    .mb-profile{
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .mb-menu{
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .site-menu::after{
+        content: "";
+        width: 85vw;
+        height: 100vh;
+        background: var(--curtain);
+        position: absolute;
+        top: -120%;
+        right: 140%;
+        z-index: 9999;
+    }
+    .bio-data{
+        display: none;
+    }
+    .bio-media{
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 390px;
+        height: 100%;
+        z-index: 99999;
+        flex: 2;
+        background: var(--pri);
+        box-shadow: var(--shad);
+        transition: all 5s ease-in-out !important;
+    }
+
+    .site-content{
+        flex: 7.4;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+    }
+    .who-iam{
+        height: 60px;
+    }
+    .hero-text{
+        padding: 2rem;
+        align-items: center;
+        color: var(--pri);
+        font-size: 16px;
+    }
+        
+    .yesport, .buzdigit, .lamama, .fiverr, .stylenet, .tinyman{
+            width: 340px;
+            height: 390px;
+            background: var(--pri);
+            box-shadow: var(--shad);
+            border: 0.5px solid  var(--sec);
+            border-radius: 5px;
+            padding: 1.3rem;
+            font-size: 16px;
+            margin: 1rem .5rem;
+            position: relative;
+        }
+
+        /* Education */
+    .edu-history{
+        background: var(--pri);
+        padding: 2rem;
+        margin: 0 2rem;
+        position: absolute;
+        z-index: 9999;
+        width: 92.7%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 1.3rem;
+        transition: 1.2s;
+    }
+    .hide-edu{
+        display: none;
+    }
+    .edu-special{
+        height: 220px !important;
+    }
+    .edu{
+        width: 350px;
+        height: 340px;
+        background: var(--pri);
+        box-shadow: var(--shad);
+        border-radius: 5px;
+        padding: 1.3rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+    .v-line{
+        width: 5px;
+        height: 820px;
+        background: var(--bg);
+        transform: rotate(180deg);
+        position: relative;
+        margin-top: 3.6rem;
+    }
+
+    .v-line2{
+       display: none;
+    }
+}
+
+@media screen and (max-width: 428px){
+    /* Hero style */
+.site-content{
+    background: linear-gradient(to top, #fbfbfb62, var(--pshad)), url(../images/Nature.jpg);
+    position: relative;
+}
+.site-hero{
+    background: transparent;
+}
+.hero-wrap{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden !important;
+    background: linear-gradient(to top, #00000062, var(--curtain)), url(../images/Nature-website.jpg) no-repeat right top;
+}
+.hero-text{
+    color: var(--pri);
+    transform: translateY(2rem) !important;
+    transform: translateX(2rem) !important;
+    width: 50%;
+}
+.hero-text h6{
+    font-family: cursive;
+    font-size: 18px;
+    width: 300px;
+}
+.hero-text h3{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 22px;
+    width: 300px;
+}
+.hero-text p{
+    font-size: 14px;
+    width: 200px;
+}
+
+.who-iam{
+    height: 30px;
+}
+.who-iam h2{
+    color: var(--sec);
+    font-size: 14px;
+}
+.hero-img img{
+    width: 360px;
+    height: 450px;
+    object-fit: cover;
+    transform: translateY(4rem);
+    margin-right: -4.5rem;
+}
+
+.work-exp{
+    background: var(--pri);
+    padding: 2rem;
+    margin: 0;
+    position: absolute;
+    z-index: 9999;
+    height: max-content !important;
+    width: 100% !important;
+}
+.skill-logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+.skill-logo img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.skill-logo p{
+    width: 40px;
+    height: 60px;
+}
+.skill-logo > p:hover{
+    width: 50px;
+    height: 50px;
+    background: var(--sec) ;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+.hd-position{
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contact-me{
+    margin-top: -50px;
+    padding: 0.5rem;
+}
+
+.project-details{
+    padding: 1.5rem;
+    background: var(--sec);
+    width: 100%;
+    height: 0;
+    top: 80px;
+    transition: .5s ease;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    animation: deslide 1s ease-in-out forwards;
+    transform: translateY(-1.2rem) !important;
+ }
+
+.footer-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
+/* Education */
+.edu-history{
+    background: var(--pri);
+    padding: 2rem;
+    margin: 0;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1.3rem;
+    transition: 1.2s;
+}
+.hide-edu{
+    display: none;
+}
+.edu-special{
+    height: 220px !important;
+}
+.edu{
+    width: 350px;
+    height: 340px;
+    background: var(--pri);
+    box-shadow: var(--shad);
+    border-radius: 5px;
+    padding: 1.3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.v-line{
+    display: none;
+}
+
+.v-line2{
+   display: none;
+}
+
+.edu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    flex-flow: row wrap;
+    margin-left: 0;
+    width: 350px;
+    padding-top: 0.65rem;
+    overflow: hidden;
+}
+.edu-footer p a{
+    text-decoration: none;
+}
+.edu-footer p a:hover{
+    color: var(--sec);
+}
+}
+
+@media screen and (max-width: 412px) {
+    .hero-img img{
+        width: 360px;
+        height: 450px;
+        object-fit: cover;
+        transform: translateY(5rem);
+        margin-right: -4.5rem;
+    }   
+}
+@media screen and (max-width: 360px) {
+    .yesport, .buzdigit, .lamama, .fiverr, .stylenet, .tinyman{
+        width: 340px;
+        height: 480px;
+        background: var(--pri);
+        box-shadow: var(--shad);
+        border: 0.5px solid  var(--sec);
+        border-radius: 5px;
+        padding: 1.3rem;
+        font-size: 16px;
+        margin: 1.5rem .5rem;
+        position: relative;
+    }
+
+    .project-details{
+        padding: 1.5rem;
+        background: var(--sec);
+        width: 100%;
+        height: 0;
+        top: 80px;
+        transition: .5s ease;
+        position: absolute;
+        z-index: 99;
+        display: none;
+        animation: deslide 1s ease-in-out forwards;
+        transform: translateY(-2.5rem) !important;
+     }
+
+     .footer{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        padding: .5rem;
+        text-align: center;
+        margin-left: -.2rem !important;
+     }
+}

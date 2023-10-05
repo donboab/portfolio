@@ -38,8 +38,11 @@ const contbox = function showPopup(val) {
   }
 };
 
+const dateToday = () => {
 const live_date = new Date().getFullYear();
-  document.querySelector("#live-date").innerHTML = live_date;
+  document.querySelector(".date-today").innerHTML = live_date;
+};
+dateToday();
 
 let hero_type = () => {
 var content = [ "I am a Front-end Web Developer.", "Grit Helps My Problem-solving Skills.", "I am Self-motivated.", "I Love Branding and Marketing.", "Research skills is my Secret Weapons.", "I am a Goal Getter.", "I am Open to Large or Small Projects." ];
@@ -117,6 +120,12 @@ const menu_close = () => {
   edu_hide.classList.add("hide-edu");
   let home_wrap = document.querySelector(".home-wrap");
   home_wrap.classList.remove("hide-home");
+  let mbMenu = document.querySelector(".mb-menu");
+  let siteNav = document.querySelector(".site-nav");
+  siteNav.classList.remove("media-nav");
+  mbMenu.classList.remove("change");
+  let bioData = document.querySelector(".bio-data");
+  bioData.classList.remove("bio-media");
 };
 
 
@@ -129,4 +138,33 @@ const edu_nav = () => {
   home_wrap.classList.add("hide-home");
   let edu_hide = document.querySelector(".edu-history");
   edu_hide.classList.remove("hide-edu");
+  let mbMenu = document.querySelector(".mb-menu");
+  let siteNav = document.querySelector(".site-nav");
+  siteNav.classList.remove("media-nav");
+  mbMenu.classList.remove("change");
+  let bioData = document.querySelector(".bio-data");
+  bioData.classList.remove("bio-media");
+   
+}
+
+const mobileMenu = () => {
+  let mbMenu = document.querySelector(".mb-menu");
+  let siteNav = document.querySelector(".site-nav");
+  siteNav.classList.toggle("media-nav");
+  let site_menu = document.querySelector(".site-menu");
+  site_menu.classList.add("menu-show");
+  mbMenu.classList.toggle("change");
+  let bioData = document.querySelector(".bio-data");
+  bioData.classList.remove("bio-media");
+}
+
+const mobileProfile = () => {
+  let mbProfile = document.querySelector(".mb-profile");
+  let bioData = document.querySelector(".bio-data");
+  bioData.classList.toggle("bio-media");
+  let mbMenu = document.querySelector(".mb-menu");
+  let siteNav = document.querySelector(".site-nav");
+  siteNav.classList.remove("media-nav");
+  mbMenu.classList.remove("change");
+  
 }
