@@ -28,13 +28,13 @@ const open_Tab = function porfolioTab(evt, category) {
     evt.currentTarget.className += " active";
   }
 
-const activate_Tab = (document.getElementById('default-tab').click());
+const activate_Tab = (document.querySelector('#default-tab').click());
 
 const contbox = function showPopup(val) {
   if (val) {
-    document.getElementById('popup').style.visibility = 'visible'
+    document.querySelector('#popup').style.visibility = 'visible'
   } else {
-    document.getElementById('popup').style.visibility = 'hidden'
+    document.querySelector('#popup').style.visibility = 'hidden'
   }
 };
 
