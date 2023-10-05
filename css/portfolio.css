@@ -923,6 +923,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
     flex-wrap: wrap;
     margin-left: -5rem;
 }
@@ -1420,6 +1421,7 @@
     margin: 2.5rem 1rem -.8rem;
     width: 390px;
     margin-left: -.9rem;
+    text-align: center;
 }
 /* Education */
 .edu-history{
