@@ -991,6 +991,12 @@
         margin: 1rem;
         position: relative;
     }
+
+    .footer{
+        box-shadow: none !important;
+        padding: .2rem;
+        margin: 2.5rem 1rem -.8rem;
+    }
     
     /* Education */
     .edu-history{
