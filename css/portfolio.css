@@ -1100,7 +1100,7 @@
     }
 
 }
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
     .site-container{
         background: var(--bg);
         padding: 0;
@@ -1294,7 +1294,7 @@
     }
 }
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 428px) {
     /* Hero style */
 .site-content{
     background: linear-gradient(to top, #fbfbfb62, var(--pshad)), url(../images/Nature.jpg);
@@ -1517,12 +1517,30 @@
   }
 }
 
+@media screen and (max-width: 912px) {
+    .hero-img img{
+        width: 360px;
+        height: 450px;
+        object-fit: cover;
+        transform: translate(-4rem, 3.5rem);
+        margin-right: -4.5rem;
+    }   
+}
+@media screen and (max-width: 820px) {
+    .hero-img img{
+        width: 360px;
+        height: 450px;
+        object-fit: cover;
+        transform: translate(-4rem, 3rem);
+        margin-right: -4.5rem;
+    }   
+}
 @media screen and (max-width: 412px) {
     .hero-img img{
         width: 360px;
         height: 450px;
         object-fit: cover;
-        transform: translateY(5rem);
+        transform: translateY(6rem);
         margin-right: -4.5rem;
     }   
 }
