@@ -1294,7 +1294,7 @@
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 720px) {
     /* Hero style */
 .site-content{
     background: linear-gradient(to top, #fbfbfb62, var(--pshad)), url(../images/Nature.jpg);
