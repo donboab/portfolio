@@ -1305,7 +1305,7 @@
 }
 .hero-wrap{
     display: flex;
-    height: 80vh;
+    height: 65vh;
     width: 100%;
     margin: 0;
     justify-content: space-around;
@@ -1316,7 +1316,7 @@
 .hero-text{
     color: var(--pri);
     transform: translateY(2rem) !important;
-    transform: translateX(2rem) !important;
+    transform: translateX(-1rem) !important;
     width: 50%;
 }
 .hero-text h6{
@@ -1348,6 +1348,7 @@
     height: 450px;
     object-fit: cover;
     transform: translateY(4rem);
+    transform: translateX(-1rem) !important;
     margin-right: -4.5rem;
 }
 
