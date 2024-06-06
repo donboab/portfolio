@@ -1084,7 +1084,7 @@
         position: relative;
         margin-top: 3.6rem;
     }
-    .v-line2{
+    .v-line2, .v-line{
        display: none;
     }
 
@@ -1294,7 +1294,7 @@
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 760px) {
     /* Hero style */
 .site-content{
     background: linear-gradient(to top, #fbfbfb62, var(--pshad)), url(../images/Nature.jpg);
