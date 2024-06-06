@@ -1133,12 +1133,12 @@
     }
     .hero-text h6{
         font-family: cursive;
-        font-size: clamp(2rem);
+        font-size: 20px !important;
     }
     .hero-text h3{
         font-family: cursive;
         font-weight: 500;
-        font-size: clamp(3rem);
+        font-size: 25px !important;
     }
     .who-iam{
         height: 30px;
@@ -1147,6 +1147,7 @@
     }
     .who-iam h2{
         color: var(--sec);
+        font-size: 15px !important;
     }
     .site-wrap{
         display: flex;
