@@ -1271,7 +1271,7 @@
 
         /* Education */
     .edu-history{
-        background: var(--mobilepri);
+        background: var(--mobilepri) !important;
         padding: 2rem;
         margin: 0 1.9rem !important;
         position: absolute;
