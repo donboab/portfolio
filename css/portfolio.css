@@ -975,7 +975,7 @@
     }
     .who-iam{
         height: 65px;
-        pomargin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
     .who-iam h2{
         color: var(--sec);
