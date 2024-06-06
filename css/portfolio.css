@@ -1273,10 +1273,10 @@
     .edu-history{
         background: var(--mobilepri);
         padding: 2rem;
-        margin: 0 1.9rem;
+        margin: 0 1.9rem !important;
         position: absolute;
         z-index: 9999;
-        width: 93.8%;
+        width: 93.8% !important;
         display: flex;
         flex-flow: row wrap;
         align-items: stretch;
