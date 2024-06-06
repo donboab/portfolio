@@ -1239,7 +1239,12 @@
         color: var(--pri);
         font-size: 16px;
     }
-        
+    
+    .work-exp{
+        background: var(--mobilepri);
+        margin: 0 1.9rem;
+        width: 93.8%;
+    }
     .yesport, .buzdigit, .lamama, .fiverr, .stylenet, .tinyman{
             width: 340px;
             height: 478px;
@@ -1266,12 +1271,12 @@
 
         /* Education */
     .edu-history{
-        background: var(--pri);
+        background: var(--mobilepri);
         padding: 2rem;
-        margin: 0 2rem;
+        margin: 0 1.9rem;
         position: absolute;
         z-index: 9999;
-        width: 92.7%;
+        width: 93.8%;
         display: flex;
         flex-flow: row wrap;
         align-items: stretch;
@@ -1317,6 +1322,7 @@
 }
 .site-hero{
     background: transparent;
+    max-height: 100vh;
 }
 .hero-wrap{
     display: flex;
@@ -1332,7 +1338,7 @@
     color: var(--pri);
     padding-top: 5rem;
     /* transform: translateY(2rem) !important; */
-    transform: translateX(-1rem) !important;
+    transform: translateX(-2.6rem) !important;
     width: 50vw;
 }
 .hero-text h6{
