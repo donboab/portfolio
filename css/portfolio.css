@@ -1108,26 +1108,41 @@
         height: 100vh;
         position: relative;  
     }
+    .site-hero{
+        max-height: 34vh;
+    }
+    .hero-wrap{
+        overflow: hidden;
+    }
     .hero-img img{
-        width: 399px;
-        height: 399px;
+        width: 495px;
+        height: 495px;
         object-fit: cover;
-        margin-bottom: -7.5rem;
         margin-right: -1.0rem;
+        transform: translateX(-7rem);
+    }
+    .hero-text{
+        transform: translateY(-5rem);
+        margin-left: 2rem;
     }
     .hero-text p{
-    font-size: 18px;
+        font-size: clamp(1.6rem, 50%, 1.3rem);
+        margin-top: 3rem !important;
+        text-align-last: left;
+        /* width: max(34rem); */
     }
     .hero-text h6{
         font-family: cursive;
+        font-size: clamp(2rem, 50%, 2rem);
     }
     .hero-text h3{
         font-family: cursive;
         font-weight: 500;
-        font-size: 40px;
+        font-size: clamp(3rem, 50%, 2rem);
     }
     .who-iam{
         height: 30px;
+        width: 34rem !important;
         margin-bottom: 1rem;
     }
     .who-iam h2{
